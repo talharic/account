@@ -7,6 +7,7 @@ import javax.persistence.*
 
 @Entity
 data class Transaction(
+
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
@@ -21,10 +22,10 @@ data class Transaction(
 
 ) {
 
-    constructor(amount: BigDecimal, account: Account) : this(
+    constructor(amount: BigDecimal, transactionDate: LocalDateTime, account: Account) : this(
         id = null,
         amount = amount,
-        transactionDate = LocalDateTime.now(),
+        transactionDate = transactionDate,
         transactionType = TransactionType.INITIAL,
         account = account
     )

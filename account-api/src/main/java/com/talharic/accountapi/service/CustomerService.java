@@ -13,7 +13,8 @@ public class CustomerService {
     private final CustomerRepository customerRepository;
     private final CustomerDtoConverter converter;
 
-    public CustomerService(CustomerRepository customerRepository, CustomerDtoConverter converter) {
+    public CustomerService(CustomerRepository customerRepository,
+                           CustomerDtoConverter converter) {
         this.customerRepository = customerRepository;
         this.converter = converter;
     }
