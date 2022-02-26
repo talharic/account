@@ -1,7 +1,7 @@
 package com.talharic.accountapi.service;
 
 import com.talharic.accountapi.dto.CustomerDto;
-import com.talharic.accountapi.dto.CustomerDtoConverter;
+import com.talharic.accountapi.dto.converter.CustomerDtoConverter;
 import com.talharic.accountapi.exception.CustomerNotFoundException;
 import com.talharic.accountapi.model.Customer;
 import com.talharic.accountapi.repository.CustomerRepository;
