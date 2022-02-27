@@ -45,7 +45,8 @@ public class AccountApiApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args)  {
-        Customer customer = customerRepository.save(new Customer("Cagri", "Dursun"));
+        Customer customer = customerRepository.save(new Customer("Talha", "Arıç"));
+        Customer customer2 = customerRepository.save(new Customer("Cagri", "Dursun"));
         System.out.println(customer);
     }
 }
